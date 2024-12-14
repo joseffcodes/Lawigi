@@ -3,137 +3,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lawigi Meme Coin - Justice in Every Coin</title>
+    <title>Lawigi Meme Coin - The F###ing Coin of Justice!</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #1a1a1a;
-            color: #f5f5f5;
+            background-color: #1f1f1f;
+            color: #00bfff;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
         }
         header {
-            background-color: #0d3b66;
-            padding: 30px 20px;
-            text-align: center;
+            background-color: #1e90ff;
+            padding: 40px;
             color: #fff;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            font-size: 3rem;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+            animation: glow 1s ease-in-out infinite alternate;
+        }
+        @keyframes glow {
+            0% { text-shadow: 3px 3px #00bfff; }
+            100% { text-shadow: 3px 3px 15px #1e90ff, 0 0 25px #1e90ff; }
         }
         header h1 {
             margin: 0;
-            font-size: 3rem;
+            font-size: 5rem;
             text-transform: uppercase;
+            text-shadow: 3px 3px #00bfff, 5px 5px #1e90ff;
         }
         header p {
-            margin: 10px 0 0;
-            font-size: 1.2rem;
-            font-style: italic;
+            margin: 10px 0;
+            font-size: 1.5rem;
+            color: #fff;
+            text-shadow: 2px 2px #1e90ff;
         }
         .content {
-            padding: 20px;
+            padding: 40px;
             max-width: 900px;
             margin: 30px auto;
-            background: #2c2c2c;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-            border-radius: 12px;
+            background: #333;
+            border-radius: 20px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+            animation: flipIn 1s ease-in-out;
+        }
+        @keyframes flipIn {
+            0% { transform: rotateX(-100deg); }
+            100% { transform: rotateX(0deg); }
         }
         .content h2 {
-            color: #ee964b;
-            border-bottom: 2px solid #0d3b66;
-            padding-bottom: 5px;
-            margin-bottom: 15px;
+            color: #00bfff;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #1e90ff;
+            text-shadow: 2px 2px #1e90ff;
         }
         .content p {
             line-height: 1.8;
             margin-bottom: 20px;
+            font-size: 1.2rem;
         }
         .content ol {
-            padding-left: 20px;
-            margin-bottom: 20px;
+            padding-left: 0;
+            list-style: none;
         }
         .content ol li {
-            margin: 10px 0;
+            margin: 12px 0;
+            padding: 12px;
+            background: #444;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .content ol li:hover {
+            background: #00bfff;
+            color: #fff;
+            transform: scale(1.1);
         }
         .lawyer-img {
-            text-align: center;
-            margin: 20px 0;
+            margin: 30px 0;
+            animation: shake 0.5s ease-in-out infinite;
+        }
+        @keyframes shake {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-15px); }
+            50% { transform: translateX(15px); }
+            75% { transform: translateX(-15px); }
+            100% { transform: translateX(0); }
         }
         .lawyer-img img {
-            max-width: 100%;
+            max-width: 90%;
             border-radius: 12px;
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+            border: 5px solid #1e90ff;
         }
-        ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
+        .cta-button {
+            background-color: #00bfff;
+            color: #fff;
+            padding: 20px 40px;
+            font-size: 1.8rem;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 20px 0;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
         }
-        ul li {
-            margin: 10px 0;
+        .cta-button:hover {
+            background-color: #1e90ff;
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
         }
-        ul li a {
-            text-decoration: none;
-            color: #ee964b;
+        .social-links {
+            margin-top: 30px;
+        }
+        .social-links a {
+            display: inline-block;
+            background-color: #1e90ff;
+            color: #fff;
+            font-size: 1.5rem;
             font-weight: bold;
+            padding: 15px 30px;
+            margin: 10px;
+            text-decoration: none;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+            transition: all 0.3s ease;
         }
-        ul li a:hover {
-            text-decoration: underline;
+        .social-links a:hover {
+            background-color: #00bfff;
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
         }
         footer {
-            text-align: center;
-            padding: 15px 10px;
-            background-color: #0d3b66;
+            padding: 25px;
+            background-color: #1e90ff;
             color: #fff;
-            margin-top: 30px;
-            border-top: 3px solid #ee964b;
+            margin-top: 40px;
+            border-top: 5px solid #00bfff;
         }
         footer p {
             margin: 0;
+            font-size: 1.2rem;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Lawigi Meme Coin</h1>
-        <p>The official coin of courtroom chaos and justice!</p>
+        <p>The F###ing Coin of Justice. You're Welcome.</p>
     </header>
 
     <div class="content">
-        <h2>Who is Lawigi?</h2>
+        <h2>What the F### is $LAWIGI?</h2>
         <p>
-            <b>Lawigi Coin ($LAWIGI)</b> is a meme cryptocurrency honoring the legendary attorney who represented Luigi in the infamous case of "Luigi vs. Health CEO." When Luigi was accused of the shocking murder of a health corporation's CEO, Lawigi stepped up with unparalleled courtroom charisma to deliver justice.
+            You’re probably asking yourself, "What the hell is $LAWIGI?" Well, let me tell you, it's the most insane coin on the blockchain. Born from the court battle between Luigi and some corporate CEO, $LAWIGI is the cryptocurrency equivalent of a slap to the face with a meme. It's a coin that’ll make you LOL, ROFL, and possibly snort in public.
         </p>
 
         <div class="lawyer-img">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Scales_of_Justice%2C_Symbol.jpg" alt="Lawigi Scales of Justice">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Scales_of_Justice%2C_Symbol.jpg" alt="Justice? More like Chaos">
         </div>
 
-        <h2>Why $LAWIGI?</h2>
+        <h2>Why the F### Would You Choose $LAWIGI?</h2>
         <p>
-            Justice isn’t just a concept; it’s a movement! $LAWIGI represents fairness, humor, and financial freedom. Whether you’re a legal eagle, a crypto enthusiast, or someone who loves outrageous stories, $LAWIGI brings laughter and value to the blockchain.
+            Justice? Who needs it when you’ve got $LAWIGI? This coin is all about having fun while sticking it to the man (or the CEO). Join the $LAWIGI revolution and watch your crypto portfolio go to the moon while laughing your ass off. This is the only coin that delivers both gains and jokes.
         </p>
 
-        <h2>How to Buy $LAWIGI?</h2>
-        <p>
-            Here’s your guide to becoming part of the justice revolution:
-        </p>
+        <h2>How the F### Do I Buy $LAWIGI?</h2>
         <ol>
-            <li>Download a crypto wallet like Metamask or BullX.</li>
-            <li>Fund your wallet with SOL or ETH.</li>
-            <li>Swap your cryptocurrency for $LAWIGI using a trusted exchange.</li>
+            <li>Download a wallet that doesn’t suck. Try Metamask or BullX. No excuses.</li>
+            <li>Fill that wallet with ETH or SOL. Don't worry, it’s not that hard.</li>
+            <li>Trade it for $LAWIGI and hold on tight. You’re in for a wild ride!</li>
         </ol>
 
-        <h2>Join the Community!</h2>
-        <p>
-            Be part of the $LAWIGI movement and help us bring justice and memes to the blockchain. Join us on Telegram to stay updated!
-        </p>
-        <ul>
-            <li><a href="https://t.me/LawigiCoin">Telegram</a></li>
-        </ul>
+        <button class="cta-button" onclick="buyCoin()">Let's F###ing Go!</button>
+
+        <h2>Get in on the Action!</h2>
+        <p>Ready to ride the $LAWIGI wave? Well, what are you waiting for, get in there and let's F###ing go!</p>
+
+        <div class="social-links">
+            <a href="https://t.me/LawigiCoin" class="cta-button">Join our F###ing Telegram!</a>
+            <a href="https://x.com/lawigicoin?s=21" class="cta-button">Follow us on Twitter!</a>
+        </div>
     </div>
 
     <footer>
-        <p>&copy; 2024 Lawigi Coin. All rights reserved. Powered by Meme Law.</p>
+        <p>&copy; 2024 $LAWIGI. Memes, Crypto, and Chaos. Powered by F###ing Justice.</p>
     </footer>
+
+    <script>
+        function buyCoin() {
+            alert("Welcome to the $LAWIGI Club! Get ready for the chaos!");
+        }
+    </script>
 </body>
 </html>
